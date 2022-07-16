@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/ironman"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="160dp"
+        android:onClick="elegir"
+        app:layout_constraintEnd_toStartOf="@+id/thor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ironman" />
+
+    <ImageView
+        android:id="@+id/wanda"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="4dp"
+        android:onClick="elegir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thor"
+        app:layout_constraintTop_toTopOf="@+id/thor"
+        app:srcCompat="@drawable/wanda" />
+
+    <ImageView
+        android:id="@+id/thor"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:onClick="elegir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ironman"
+        app:srcCompat="@drawable/thor" />
+
+    <ImageView
+        android:id="@+id/widow"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="36dp"
+        android:onClick="elegir"
+        app:layout_constraintEnd_toStartOf="@+id/spiderman"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ironman"
+        app:srcCompat="@drawable/blackwidow" />
+
+    <ImageView
+        android:id="@+id/spiderman"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:onClick="elegir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/widow"
+        app:srcCompat="@drawable/spiderman" />
+
+    <ImageView
+        android:id="@+id/strange"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="4dp"
+        android:onClick="elegir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spiderman"
+        app:layout_constraintTop_toTopOf="@+id/spiderman"
+        app:srcCompat="@drawable/strange" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="68dp"
+        android:text="ELIGE TU PERSONAJE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
